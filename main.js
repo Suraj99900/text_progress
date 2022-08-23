@@ -1,5 +1,7 @@
 $(document).ready(function(){
     $('.count_text').text(0+"% Progress");
+    $('#textarea').attr('maxlength','101');
+
     $('#textarea').keyup(function() {
 
         var len = $(this).val().length;
@@ -21,6 +23,8 @@ $(document).ready(function(){
             $('#count_text').css('color','red');
             // $('.error__smg').show();
             $('.error__smg').css('visibility','visible');
+
+           
         }
 
     })
